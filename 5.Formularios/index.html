@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="" id="form" method="">
+        <label for="name">Nombres</label>
+        <input type="text"
+        id="name" 
+        name="name"
+        value="Hola" 
+        placeholder="Introduzca su nombre"
+        maxlength="25"
+        minlength="3"
+        pattern="[a-zA-Z]"
+        required
+        title="Error en datos"
+        autofocus="true"
+        autocomplete="off"
+        spellcheck="true"
+        tabindex="1"><br>
+        <label for="edad">Edad</label>
+        <input type="number"  
+        id="edad"
+        placeholder="Ingrese su edad"
+        tabindex="2"
+        min="18"
+        max="68"><br>
+        <label for="email">E-mail</label>
+        <input type="email"
+        id="email"
+        placeholder="Ingrese su email"
+        tabindex="3"
+        >
+        <label for="pass">Contraseña</label>
+        <input type="password"
+        id="pass"
+        placeholder="Ingrese su email"
+        tabindex="3"
+        >
+        <label for="fecha">Fecha</label>
+        <input type="date"
+        id="devha"
+        placeholder="Ingrese su Contraseña"
+        tabindex="3"
+        >
+        <input type="color" name="color" id="color">
+        <datalist id="datalist">
+            <option value="">enero</option>
+            <option value="">Febrero</option>
+            <option value="">Marzo</option>
+        </datalist>
+        
+        <hr>
+        <fieldset>
+            <legend>Esato civil</legend>
+            <input type="radio" name="estado" value="Casado">Casado <br>
+            <input type="radio" name="estado" value="Soltero">Soltero <br>
+        </fieldset>
+
+        <label for="select">Lenguajes de programación</label>
+        <select id="select">
+            <OPtgroup label="BackEnd">
+                <option value="">Java</option>
+                <option value="">Python</option>
+                <option value="">Php</option>
+            </OPtgroup>
+            <OPtgroup label="FrontEnd">
+                <option value="">CSS</option>
+                <option value="">JavaScript</option>
+            </OPtgroup>
+        </select><br>
+        <label for="termino">Terminos y condiciones</label><br>
+        <input type="checkbox" name="termino" id="termino">Acepta terminos y condicionesbr
+
+        <input type="button" value="Enviar">
+        <button id="enviar" type="submit">Enviar datos</button>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
